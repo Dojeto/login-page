@@ -4,8 +4,6 @@ const mongo = require("../db/mongoose");
 let ejs = require('ejs');
 let path = require('path');
 const port = process.env.PORT || 3000;
-const { use } = require("express/lib/application");
-const { default: mongoose } = require("mongoose");
 const app = express();
 
 const static_path = path.join(__dirname,"../public")
